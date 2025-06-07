@@ -1,25 +1,34 @@
 # nuScenes DB Tool - v1.0.0
 
-**nuScenes API and DB Tool** is a Python-based application designed to manage nuScenes datasets using PostgreSQL and a FastAPI-powered REST API. This tool provides comprehensive database interaction capabilities, supports CRUD operations, custom SQL queries, and enables dataset generation from raw LiDAR samples.
+**nuScenes DB Tool** is a Python-based application designed to manage nuScenes datasets using PostgreSQL and a FastAPI-powered REST API. This tool provides a modern GUI for database interaction, supports CRUD operations, custom SQL queries, and enables dataset generation from raw LiDAR samples.
 
+## Project Overview
 
+This project consists of the following components:
+
+- **GUI Application**: A modern, user-friendly interface built with customtkinter for database interaction.
+- **FastAPI REST API**: A robust API for programmatic access to nuScenes data.
+- **PostgreSQL Database**: A structured database schema for storing nuScenes data.
+- **Docker Support**: Containerized deployment for both the API and database loader.
 
 ## Features
 
 - **FastAPI REST API**: Perform CRUD operations and interact with nuScenes data programmatically.
-- **nuScenes Dataset Integration**:  Preprocess and load raw LiDAR data into PostgreSQL.
+- **nuScenes Dataset Integration**: Preprocess and load raw LiDAR data into PostgreSQL.
 - **SQL Query Execution**: Run custom SQL queries directly within the app and view results.
 - **Dockerized Environment**: Simplified deployment with Docker support.
 - **Data Export**: Export table data or the entire database in SQL or CSV format.
 - **CSV Import**: Import data into tables from CSV files.
 - **GUI Enhancements**: Use a modern interface with sorting and easy navigation through tables.
 - **Executable**: Available as a packaged executable under releases for easy installation.
-  
+
 ## Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
 - [How to Use](#how-to-use)
+- [API Documentation](#api-documentation)
+- [Database Schema](#database-schema)
 - [Screenshots](#screenshots)
 - [Releases](#releases)
 - [License](#license)
@@ -39,7 +48,9 @@
    git clone https://github.com/erdemonal11/nuScenesDB.git
    cd nuscenes-db-tool
    ```
-2. Create a ```.env``` file for environment variables:
+
+2. Create a `.env` file for environment variables:
+
    ```bash
    DB_HOST=host.docker.internal
    DB_PORT=5432
@@ -48,13 +59,15 @@
    DB_PASSWORD=yourpassword
    NUSCENES_DATAROOT=/path/to/nuscenes
    SQL_FILE_PATH=/path/to/nuScene.sql
-    ```
-3. Build and run the Docker containers:
-   ```bash
-    make start-fresh
-    ```
-4. Access the API documentation at:  ```bash http://127.0.0.1:8000/docs ```
+   ```
 
+3. Build and run the Docker containers:
+
+   ```bash
+   make start-fresh
+   ```
+
+4. Access the API documentation at: `http://127.0.0.1:8000/docs`
 
 ### Option 3: Manual Setup
 
@@ -66,13 +79,16 @@
    ```
 
 2. Install dependencies:
+
    ```bash
-    pip install -r requirements.txt
-    ```
+   pip install -r requirements.txt
+   ```
+
 3. Run the Python script:
+
    ```bash
-    python nuscenetool.py
-    ```
+   python nuscenetool.py
+   ```
 
 ## How to Use
 
@@ -95,6 +111,18 @@
 
 ### CSV Import:
 - Use the **CSV import** feature to load data into the selected table from a CSV file.
+
+## API Documentation
+
+The FastAPI REST API provides endpoints for interacting with nuScenes data. For detailed API documentation, visit:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+## Database Schema
+
+The database schema is defined in `nuScene.sql`. It includes tables for logs, sensors, visibility, attributes, categories, instances, scenes, samples, ego poses, calibrated sensors, sample data, sample annotations, lidarseg, and maps.
 
 ## Screenshots
 
