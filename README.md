@@ -45,7 +45,7 @@ This project consists of the following components:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/erdemonal11/nuScenesDB.git
+   git clone https://github.com/erdemonal11/nuScenes-Toolkit.git
    cd nuscenes-db-tool
    ```
 
@@ -74,7 +74,7 @@ This project consists of the following components:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/erdemonal11/nuScenesDB.git
+   git clone https://github.com/erdemonal11/nuScenes-Toolkit.git
    cd nuscenes-db-tool
    ```
 
