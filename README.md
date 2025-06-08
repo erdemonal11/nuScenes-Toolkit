@@ -37,7 +37,7 @@ This project consists of the following components:
 
 ### Option 1: Running the Executable (Recommended)
 
-1. Download the latest release: [nuScenes DB Tool - v1.0.0](https://github.com/erdemonal11/nuScenesDB/releases/tag/exe-release).
+1. Download the latest release: [nuScenes DB Tool - v1.0.0](https://github.com/erdemonal11/nuScenes-Toolkit/releases/tag/exe-release).
 2. Extract the files and run the `nuScenes DB Tool - v1.0.0.exe`.
 
 ### Option 2: Using Docker
@@ -46,7 +46,7 @@ This project consists of the following components:
 
    ```bash
    git clone https://github.com/erdemonal11/nuScenes-Toolkit.git
-   cd nuscenes-db-tool
+   cd nuScenes-Toolkit
    ```
 
 2. Create a `.env` file for environment variables:
@@ -75,7 +75,7 @@ This project consists of the following components:
 
    ```bash
    git clone https://github.com/erdemonal11/nuScenes-Toolkit.git
-   cd nuscenes-db-tool
+   cd nuScenes-Toolkit
    ```
 
 2. Install dependencies:
@@ -155,7 +155,7 @@ Use the **Update** feature to modify existing records directly from the table vi
 
 The latest version of the tool is available as an executable for easy installation:
 
-- [Download nuScenes DB Tool - v1.0.0](https://github.com/erdemonal11/nuScenesDB/releases/tag/exe-release)
+- [Download nuScenes DB Tool - v1.0.0](https://github.com/erdemonal11/nuScenes-Toolkit/releases/tag/exe-release)
 
 ## License
 
